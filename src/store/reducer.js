@@ -6,7 +6,6 @@ const defaultState = {
 };
 
 export default (state = defaultState, action) => {
-  console.log(state, action);
   let newState = JSON.parse(JSON.stringify(state));
   switch (action.type) {
     case ADD_ITEM:
